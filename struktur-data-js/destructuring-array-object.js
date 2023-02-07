@@ -4,12 +4,14 @@
 const movies = {
     movieName : "Spiderman",
     type : "Superheroe",
-    idr : "Rp 100.000"
+    idr : "Rp 100.000",
+    duration : "90 Minutes"
 }
 
-// Penggunaan Destructuring dapat dilakukan dengan cara dibawah ini
-const movieName = movies.movieName
-const type = movies.type
-const idr = movies.idr
-
+// Penggunaan Destructuring object dapat dilakukan dengan cara dibawah ini
+const {movieName, type, idr} = movies
 console.log(movieName, type, idr)
+
+// Jika hanya membutuhkan satu objek saja, maka kita dapat menyesuaikannya, seperti contoh dibawah ini
+const {duration} = movies
+console.log(duration)

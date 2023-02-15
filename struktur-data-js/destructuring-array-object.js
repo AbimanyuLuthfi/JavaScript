@@ -27,3 +27,24 @@ const biography = {
 let name = "Luthfi"
 let age = "19"
 console.log(name,age)
+
+// Default Value
+// Ketika melakukan destructuring dan menetapkan suatu variable yang belum memiliki nilai
+// Maka nilai tersebut akan berisi "Undifined"
+const cinema = {
+    film: "Day Shift",
+    genre: "Thriller"
+}
+
+const {film, genre, duration2} = cinema
+console.log(film, genre, duration2)
+
+// Alternatif penerapan nilai pada variable yang menerapkan destructuring
+const cinema2 = {
+    film2: "Now You See  Me",
+    genre2: "Thriller"
+}
+const {film2, genre2, duration3 = "120 Minutes"} = cinema2
+console.log(film2, genre2, duration3)
+
+// Assigning to Different Local Variable Names

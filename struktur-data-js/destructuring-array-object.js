@@ -48,3 +48,11 @@ const {film2, genre2, duration3 = "120 Minutes"} = cinema2
 console.log(film2, genre2, duration3)
 
 // Assigning to Different Local Variable Names
+const cinema3 =["Thor", "Spiderman No Way Home", "Avatar The Last Air Bender"]
+
+// Destructuring Array dapat dilakukan seperti code dibawah ini
+const [firstcinema, secondcinema, thirdcinema] = cinema3
+
+console.log(firstcinema)
+console.log(secondcinema)
+console.log(thirdcinema)

@@ -56,3 +56,10 @@ const [firstcinema, secondcinema, thirdcinema] = cinema3
 console.log(firstcinema)
 console.log(secondcinema)
 console.log(thirdcinema)
+
+// Jika ingin melakukan destrukturisasi pada array tertentu
+const food = ["Fried Rice", "Seafood", "Meat Ball"]
+
+// Contoh melakukan destrukturisasi pada nilai ke 2 di dalam array
+const [,secondFood] = food
+console.log(secondFood)

@@ -63,3 +63,17 @@ const food = ["Fried Rice", "Seafood", "Meat Ball"]
 // Contoh melakukan destrukturisasi pada nilai ke 2 di dalam array
 const [,secondFood] = food
 console.log(secondFood)
+
+// Menukar nilai dengan array destructuring assignment
+let a = 5;
+let b = 8;
+ 
+console.log("Sebelum swap");
+console.log("Nilai a: " + a);
+console.log("Nilai b: " + b);
+ 
+[a, b] = [b, a] // menetapkan nilai a dengan nilai b dan nilai b dengan nilai a.
+ 
+console.log("Setelah swap");
+console.log("Nilai a: " + a);
+console.log("Nilai b: " + b);
